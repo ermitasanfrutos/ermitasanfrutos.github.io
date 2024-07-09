@@ -2,7 +2,8 @@
 title: Ermita San frutos
 layout: home
 description: Santo Patron....
-image: images/panorámica2.jpg
+imageStyle: "background-position: center"
+image: images/camino-de-san-frutos.jpg
 ---
 
 

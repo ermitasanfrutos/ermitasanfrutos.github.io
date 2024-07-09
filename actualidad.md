@@ -2,6 +2,7 @@
 title: Actualidad
 layout: page
 description: Santo Patron....
+imageStyle: "background-position: center"
 image: images/romeria.jpg
 ---
 
