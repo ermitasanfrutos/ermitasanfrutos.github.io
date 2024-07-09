@@ -1,0 +1,50 @@
+
+
+
+# Configuración del sitio
+title: Ermita San Frutos
+description: 
+author: Ermita San Frutos
+image: images/san-frutos.jpg
+icon: img/favicon.ico
+
+openingHours: "Mo-Sa 09:30-13:30 Mo-Sa 16:30-20:00"
+
+
+phone: 921 52 92 28
+email: seminario@iglesianavarra.org
+address: 40331 Burgomillodo, Segovia
+bizum: BIZUM 
+googleMaps: https://maps.app.goo.gl/QHAcFKPbd6ibKvqQ9
+
+
+locale: es_ES
+street: SN
+city: Burgomillodo
+region: Segovia
+zip: 40331
+country: España
+latitude: 41.324731457087516 
+longitude: -3.878941271164452
+
+
+ldType: Organization
+
+analytics:
+  google: # GOOGLE_ANALYTICS_ID 
+  mode: privacy # privacy | consent | off
+
+#google-site-verification: 1234
+
+keywords: segovia, ermita, san frutos, románico, romería, naturaleza, oración # ignored by Google
+
+
+
+# Build settings (NO TOCAR)
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ermitasanfrutos.obispadodesegovia.es" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+modules:
+  - facade

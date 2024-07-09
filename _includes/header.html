@@ -1,0 +1,33 @@
+
+
+
+	  <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container-fluid px-md-5">
+	      <a class="navbar-brand" href="index.html">San Frutos<span>Ermita - Segovia</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+			{% for item in site.pages %}
+				{% if item.layout == 'page' %}
+				<li class="nav-item"><a href="{{ item.url }}" class="nav-link">{{ item.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight" style="background-image: url('{{ page.image | defautl: site.image | absolute_url | uri_escape }}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container-fluid px-md-5">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate">
+          	<h2 class="subheading">{{ site.title }}</h2>
+            <h1 class="mb-4">{{ page.title }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
