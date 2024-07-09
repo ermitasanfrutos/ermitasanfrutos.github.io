@@ -2,7 +2,7 @@
 title: Priorato Benedictino
 layout: page
 description: ..
-image: 
+image: images/foto-area.jpg
 ---
 
 ### Priorato Benedictino

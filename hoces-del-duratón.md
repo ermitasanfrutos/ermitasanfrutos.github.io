@@ -2,7 +2,7 @@
 title: Hoces del Duratón
 layout: page
 description: ..
-image: 
+image: images/hoces-duraton.jpg
 ---
 
 

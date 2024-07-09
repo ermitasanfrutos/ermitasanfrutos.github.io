@@ -31,4 +31,5 @@ San Frutos es patrón de la Diócesis y de la ciudad de Segovia y ese día se ca
 Se puede ver un vídeo de la romería en el siguiente enlace de Youtube:
 
 
-https://youtu.be/_L1aLJYpPKA
+
+{% include module name='facade' yt='_L1aLJYpPKA' %}
