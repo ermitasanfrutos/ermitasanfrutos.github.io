@@ -41,7 +41,7 @@
 */
 
 	
-	var fullHeight = function() {
+	/*var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height() * 0.7);
 		$(window).resize(function(){
@@ -49,7 +49,7 @@
 		});
 
 	};
-	fullHeight();
+	fullHeight();*/
 
 	// loader
 	var loader = function() {

@@ -6,7 +6,7 @@ https://codepen.io/jason-knight/pen/OJBjgNQ -->
 {%- assign params = include.params -%}
 {%- assign ratio = params.ratio | default: '16/9' -%}
 {% if params.yt %}
-<div class="facade youtube" style="--aspect-ratio:{{ ratio }}; --video-poster:url(https://img.youtube.com/vi/{{ params.yt }}/hqdefault.jpg)">
+<div class="facade youtube" style="--aspect-ratio:{{ ratio }}; --video-poster:url(https://img.youtube.com/vi/{{ params.yt }}/hqdefault.jpg); {{ params.style }}">
   <header>{{ params.title }}</header>
   <a href="https://www.youtube.com/watch?v={{ params.yt }}" target="_blank">
     <span>Ver en YouTube</span>
@@ -14,7 +14,7 @@ https://codepen.io/jason-knight/pen/OJBjgNQ -->
   <button type="button" onclick="addIframe('youtube','{{ params.yt }}')">{{ params.title }}</button>
 </div>
 {% elsif params.vimeo %}
-<div class="facade vimeo" style="--aspect-ratio:{{ ratio }}; --video-poster:url(https://i.vimeocdn.com/video/{{ params.vimeoPoster }})" >
+<div class="facade vimeo" style="--aspect-ratio:{{ ratio }}; --video-poster:url(https://i.vimeocdn.com/video/{{ params.vimeoPoster }}); {{ params.style }}" >
   <header>{{ params.title }}</header>
   <a href="https://vimeo.com/{{ params.vimeo }}" target="_blank">
     <span>Ver en Vimeo</span>
