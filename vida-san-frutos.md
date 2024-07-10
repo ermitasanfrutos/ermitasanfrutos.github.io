@@ -1,5 +1,5 @@
 ---
-title: Vida de San Frutos
+title: San Frutos
 layout: page
 description: ".."
 imageStyle: 'background-position: center'
