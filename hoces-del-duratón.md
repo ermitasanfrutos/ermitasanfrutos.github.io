@@ -1,11 +1,9 @@
 ---
 title: Hoces del Duratón
 layout: page
-description: ..
+description: ".."
 image: images/hoces-duraton.jpg
 ---
-
-
 
 ### Hoces del Duratón - lugar de ermitorios
 

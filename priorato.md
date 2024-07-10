@@ -1,7 +1,7 @@
 ---
 title: Priorato Benedictino
 layout: page
-description: ..
+description: ".."
 image: images/foto-area.jpg
 ---
 

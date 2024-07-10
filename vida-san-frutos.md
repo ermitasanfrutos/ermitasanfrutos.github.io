@@ -1,11 +1,10 @@
 ---
 title: Vida de San Frutos
 layout: page
-description: ..
-imageStyle: "background-position: center"
+description: ".."
+imageStyle: 'background-position: center'
 image: images/san-frutos.jpg
 ---
-
 
 ### Infancia y vocación
 
