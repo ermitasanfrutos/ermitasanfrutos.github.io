@@ -2,7 +2,13 @@
 title: Ermita San Frutos
 timezone: UTC
 collections:
-description: 'San Frutos nace en ...'
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: San Frutos nace en ...
 author: Ermita San Frutos
 image: images/san-frutos.jpg
 icon: img/favicon.ico
@@ -25,7 +31,7 @@ analytics:
   google: 
   mode: privacy
 keywords: segovia, ermita, san frutos, románico, romería, naturaleza, oración
-baseurl: ""
+baseurl: ''
 url: https://ermitasanfrutos.github.io
 modules:
 - facade
