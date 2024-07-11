@@ -1,12 +1,13 @@
 ---
 title: San Frutos
 layout: page
+order: 1
 description: ".."
-imageStyle: 'background-position: center'
+imageStyle: 'background-position: top'
 image: images/san-frutos.jpg
 ---
 
-### Infancia y vocación
+### Vocación
 
 San Frutos (c. 642-715) y sus hermanos, San Valentín y Santa Engracia, pertenecían a una acomodada familia de la Segovia visigoda. Sintiendo la llamada de Dios, que les invita a seguirle de un modo más intenso, vendieron todas sus posesiones, las donaron a los pobres y se encaminaron al "desierto".
 

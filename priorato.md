@@ -1,20 +1,25 @@
 ---
-title: Priorato Benedictino
+title: Priorato
 layout: page
+order: 2
 description: ".."
 image: images/foto-area.jpg
 ---
 
-### Priorato Benedictino
 
-Durante la Reconquista, el 17 de agosto de 1076, Alfonso VI donó el sepulcro del santo y sus alrededores al monasterio benedictino de Silos. En el año 1100 el arzobispo de Toledo Bernardo de Cluny inauguró este templo como priorato de Silos. La desamortización de Mendizábal (1836) provocó la expulsión de los monjes y el abandono y hundimiento del priorato, poniendo fin a más de un milenio de vida contemplativa ininterrumpida en el cañón del Duratón. El uso de esta ermita como templo parroquial permitió su conservación, que hoy se sostiene gracias a los donativos de los visitantes y al cuidado de la hermandad de San Frutos.
+
+
+<!--Durante la Reconquista, el 17 de agosto de 1076, Alfonso VI donó el sepulcro del santo y sus alrededores al monasterio benedictino de Silos. En el año 1100 el arzobispo de Toledo Bernardo de Cluny inauguró este templo como priorato de Silos. La desamortización de Mendizábal (1836) provocó la expulsión de los monjes y el abandono y hundimiento del priorato, poniendo fin a más de un milenio de vida contemplativa ininterrumpida en el cañón del Duratón. El uso de esta ermita como templo parroquial permitió su conservación, que hoy se sostiene gracias a los donativos de los visitantes y al cuidado de la hermandad de San Frutos.
 
 ### Arquitectura
 
 La ermita de San Frutos es de capital importancia para entender la expansión del arte románico en los territorios fronterizos al sur del río Duero. San Frutos es la segunda iglesia románica más antigua de Segovia, tras la iglesia de El Salvador de Sepúlveda.
 
-La ermita de San Frutos es una iglesia románica de una sola nave, construida toda ella en sillería y rematada por un ábside semicircular. Posteriormente se le añadieron dos capillas laterales, de las que solo permanece en pie la del Evangelio (norte), donde los romeros se encomiendan a la protección de San Frutos. El ábside central, reformado en el siglo XIII, conserva un retablo barroco presidido por una imagen de la Virgen y los relicarios de los tres hermanos.
+La ermita de San Frutos es una iglesia románica de una sola nave, construida toda ella en sillería y rematada por un ábside semicircular. Posteriormente se le añadieron dos capillas laterales, de las que solo permanece en pie la del Evangelio (norte), donde los romeros se encomiendan a la protección de San Frutos. El ábside central, reformado en el siglo XIII, conserva un retablo barroco presidido por una imagen de la Virgen y los relicarios de los tres hermanos.-->
 
+
+
+## Priorato Benedictino
 
 
 El 17 de agosto del año 1076 Alfonso VI, que cuatro meses más tarde confirmaba su fuero a Sepúlveda, hacia escritura de donación al monasterio benedictino de Silos, gobernado entonces por el abad Fortunio, del sepulcro del santo y sus alrededores, disponiendo que fuera deslindado el terreno en cuestión por veintiséis de los primeros pobladores de la villa, los cuales son mencionados por sus nombres y procedencia en el documento. 

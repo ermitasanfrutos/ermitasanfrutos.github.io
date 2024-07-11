@@ -1,6 +1,7 @@
 ---
 title: Hoces del Duratón
 layout: page
+order: 3
 description: ".."
 image: images/hoces-duraton.jpg
 ---
