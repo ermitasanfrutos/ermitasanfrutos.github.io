@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: San Frutos nace en ...
+description: "San Frutos nace en ..."
 author: Ermita San Frutos
 image: images/san-frutos.jpg
 icon: img/favicon.ico
