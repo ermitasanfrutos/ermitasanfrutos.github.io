@@ -10,9 +10,9 @@ collections:
     output: true
 description: "San Frutos nace en ..."
 author: Ermita San Frutos
-image: images/san-frutos.jpg
+image: images/san-frutos.webp
 icon: img/favicon.ico
-openingHours: Mo-Sa 09:30-13:30 Mo-Sa 16:30-20:00
+openingHours: Sa 11:30-20:30, Su 11:30-18:00
 phone: 921 52 92 28
 email: seminario@iglesianavarra.org
 address: 40331 Burgomillodo, Segovia

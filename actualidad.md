@@ -4,13 +4,13 @@ layout: page
 order: 6
 description: 'Santo Patron....'
 imageStyle: 'background-position: center'
-image: images/romeria.jpg
+image: images/romeria2.webp
 ---
 
 ### La ermita en la actualidad
 
 
-{% include image src='images/romeria.jpg' alt='' caption='Romería 25 octubre' class="col-sm-6 col-md-4" %}
+{% include image src='images/romeria.webp' alt='' caption='Romería 25 octubre' class="col-sm-6 col-md-4" %}
 
 En la actualidad, y desde el año 1120, San Frutos es el patrón de la diócesis de Segovia. Siguiendo la milenaria tradición, que perduró incluso durante la invasión árabe, San Frutos es un lugar de peregrinación, donde miles de personas depositan su oración a los pies del santo.
 

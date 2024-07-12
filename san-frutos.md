@@ -4,7 +4,7 @@ layout: page
 order: 1
 description: ".."
 imageStyle: 'background-position: top'
-image: images/san-frutos.jpg
+image: images/san-frutos.webp
 ---
 
 ### Vocación
