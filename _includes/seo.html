@@ -6,14 +6,14 @@
     {%- endif -%}
 
     <!-- Title -->
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
     
     <!-- Favicon -->
     <link href="{{ page.icon | default: site.icon | absolute_url }}" rel="icon">
 
     <!-- Open Graph --> 
-    <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
     <meta property="og:locale" content="{{ site.locale }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
@@ -30,7 +30,7 @@
     <!-- Twitter meta -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="{{ page.image | default: site.image | absolute_url | uri_escape }}" />
-    <meta property="twitter:title" content="{{ page.title }} - {{ site.title }}" />
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
     <meta property="twitter:domain" content="{{ site.url }}">
     <meta property="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
@@ -44,7 +44,7 @@
       "@type":"Product",
       "name":"{{ page.title  }}",
       "description":"{{ page.description | default: site.description }}",
-      "headline":"{{ page.title }} - {{ site.title }}",
+      "headline":"{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}",
       "image":"{{ page.image | default: site.image | absolute_url | uri_escape }}",
       "url":"{{ page.url | absolute_url}}",
       "offers": {
@@ -69,7 +69,6 @@
          "{{ site.sameAs.facebook }}"
       ],
       "logo": "{{ site.logo || default: site.icon }}",
-      "priceRange": "$$",
       "image": "{{ page.image | default: site.image | absolute_url | uri_escape }}",
       "description": "{{ page.description | default: site.description }}",
       "keywords": "{{ page.keywords }}",

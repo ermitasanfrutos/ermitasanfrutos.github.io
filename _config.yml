@@ -18,6 +18,7 @@ email: seminario@iglesianavarra.org
 address: 40331 Burgomillodo, Segovia
 bizum: BIZUM
 googleMaps: https://maps.app.goo.gl/QHAcFKPbd6ibKvqQ9
+facebook: fb.com/sanfrutosdelduraton
 locale: es_ES
 street: SN
 city: Burgomillodo
@@ -32,7 +33,7 @@ analytics:
   mode: privacy
 keywords: segovia, ermita, san frutos, románico, romería, naturaleza, oración
 baseurl: ''
-url: https://ermitasanfrutos.github.io
+url: https://ermitasanfrutos.diocesisdesegovia.es
 modules:
 - facade
 - scrollDown

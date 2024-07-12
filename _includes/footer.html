@@ -8,11 +8,6 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Sobre San Frutos</h2>
               <p>{{ site.description }}</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
             </div>
           </div>
           <div class="col-md">
@@ -37,9 +32,10 @@
                 <h2 class="ftco-heading-2">Contacto</h2>
                 <div class="block-23 mb-3">
                   <ul>
-                    <li><a href="{{ site.googleMaps }}"><span class="icon icon-map-marker"></span><span class="text">{{ site.address }}</span></a></li>
-                    <li><a href="tel:{{ site.phone }}"><span class="icon icon-phone"></span><span class="text">{{ site.phone }}</span></a></li>
-                    <li><a href="mailto:{{ site.email }}"><span class="icon icon-envelope"></span><span class="text">{{ site.email }}</span></a></li>
+                    <li><a target="_blank" href="{{ site.googleMaps }}"><span class="icon icon-map-marker"></span><span class="text">{{ site.address }}</span></a></li>
+                    <li><a target="_blank" href="tel:{{ site.phone }}"><span class="icon icon-phone"></span><span class="text">{{ site.phone }}</span></a></li>
+                    <li><a target="_blank" href="mailto:{{ site.email }}"><span class="icon icon-envelope"></span><span class="text">{{ site.email }}</span></a></li>
+                    <li><a target="_blank" href="https://www.{{ site.facebook }}"><span class="icon icon-facebook"></span><span class="text">{{ site.facebook }}</span></a></li>
                   </ul>
                 </div>
             </div>

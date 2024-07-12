@@ -1,5 +1,5 @@
 ---
-title: Ermita San Frutos
+title: false
 layout: home
 description: 'Santo Patron....'
 imageStyle: 'background-position: center;  height: 100vh !important;'

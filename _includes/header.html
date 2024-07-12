@@ -26,8 +26,8 @@
       <div class="container-fluid px-md-5 justify-content-center" style="height: 100%">
         <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true" style="height: 100%;">
           <div class="col-md-6 ftco-animate">
-          	{%- if page.layout == 'page' -%}<h2 class="subheading">{{ site.title }}</h2>{%- endif -%}
-            <h1 class="mb-4">{{ page.title }}</h1>
+          	{% if page.title %}<h2 class="subheading">{{ site.title }}</h2>{% endif %}
+            <h1 class="mb-4">{{ page.title | default: site.title }}</h1>
           </div>
           {%- if page.layout == 'page' -%}{% include module name='scrollDown' %}{%- endif -%}
         </div>
