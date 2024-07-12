@@ -9668,3 +9668,13 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+blockquote {
+    margin: 0 0 1rem;
+    padding: 0 1em;
+    font-style: italic;
+    border-left: 2px solid darkgray;
+  }

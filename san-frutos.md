@@ -11,7 +11,7 @@ image: images/san-frutos.webp
 
 San Frutos (c. 642-715) y sus hermanos, San Valentín y Santa Engracia, pertenecían a una acomodada familia de la Segovia visigoda. Sintiendo la llamada de Dios, que les invita a seguirle de un modo más intenso, vendieron todas sus posesiones, las donaron a los pobres y se encaminaron al "desierto".
 
-> Jesús lo miró con amor y le dijo: ― [...] ve, _vende todo lo que tienes_ y dalo a los pobres [...] luego ven y sígueme. (Mc 10, 21)
+> Jesús lo miró con amor y le dijo: ― [...] ve, vende todo lo que tienes y dalo a los pobres [...] luego ven y sígueme. (Mc 10, 21)
 
 
 Tras la invasión musulmana (año 711), San Frutos arriesgó su vida en defensa de su fe en Cristo y sus hermanos. Testimonio de esta defensa es la popular tradición de los milagros de "La cuchillada", "La Despeñada", y la "Disputa sobre la Eucarístia". Muriendo por causas naturales en el año 715, fue enterrado por sus hermanos, que se establecieron en el monasterio de San Zoilo, en las inmediaciones de Caballar. Poco después, Valentín y Engracia fueron decapitados por los musulmanes, dando con su martirio un último testimonio de una vida totalmente entregada a Dios. Los cuerpos de los tres hermanos se veneran hoy en la Catedral de Segovia.
