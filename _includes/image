@@ -1,4 +1,4 @@
-<div class="clearfix float-left pr-4 pt-2 pl-0 ftco-animate {{ include.class | default: 'col-md-6' }}">
+<div class="clearfix alternative-float ftco-animate {{ include.class | default: 'col-sm-6 col-md-4' }}">
 	<figure>
 	   <img src="{{ include.src | absolute_url }}" style="width: 100%" alt="{{ include.alt }}"/>
 	   <figcaption class="text-center">{{ include.caption }}</figcaption>

@@ -1,6 +1,6 @@
 ---
 title: Recursos
-order: 4
+order: 6
 layout: page
 description: ".."
 imageStyle: 'background-position: center'

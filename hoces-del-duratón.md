@@ -1,23 +1,24 @@
 ---
 title: Hoces del Duratón
 layout: page
-order: 3
+order: 5
 description: ".."
 image: images/hoces-duraton.webp
 ---
 
-### Hoces del Duratón - lugar de ermitorios
+### Hoces del Duratón
 
-Siguiendo este deseo, los tres hermanos se retiraron a tres ermitas separadas (San Frutos en la cumbre, Valentín a media ladera y Engracia a orillas del río) para vivir una vida de silencio, alejados del ruido pero también de la comodidad del mundo. La cercanía de las tres ermitas y su dependencia del cercano monasterio de Caballar eran típicas de la vida eremítica, que combinaba el silencio y la soledad con el apoyo y cercanía de la comunidad cristiana, que camina junta por un mismo sendero. El gran número de ermitas que durante siglos han jalonado el río Duratón son buena prueba de ello.
+{% include image src='/images/siete altares.webp' alt='' caption='Cueva de los siete altares' %}
 
-### Naturaleza - San Frutos Pajarero
+Siguiendo su llamada a una vida de oración y dedicación a Dios, los tres hermanos se retiraron a tres ermitas separadas (San Frutos en la cumbre, Valentín a media ladera y Engracia a orillas del río) para vivir una vida de silencio, alejados del ruido pero también de la comodidad del mundo. La cercanía de las tres ermitas y su dependencia del cercano monasterio de Caballar eran típicas de la vida eremítica, que combinaba el silencio y la soledad con el apoyo y cercanía de la comunidad cristiana, que camina junta por un mismo sendero. El gran número de ermitas que durante siglos han jalonado el río Duratón son buena prueba de ello.
+
+{% include image src='/images/san julián.webp' alt='' caption='San Julián' %}
 
 San Frutos, apodado Pajarero, se retiró a este lugar de sobrecogedora belleza, cuya contemplación silenciosa nos habla de la grandeza de su Creador. Vivieron así San Frutos y sus hermanos una vida contemplativa, cuya aparente "improductividad" nos resulta difícil de comprender en la actualidad si no entendemos su propósito de escucha y cercanía con Dios, cuya llamada nuestros tres santos habían sentido.
 
-{% include image src='/images/hoces otoño.webp' alt='' caption='Hoces en otoño' %}
-
-
 El río Duratón nace en Somosierra (Madrid) y rinde sus aguas al Duero en Peñafiel (Valladolid). La mayor parte de sus setenta y cinco kilómetros de recorrido transcurren en tierras segovianas. Al llegar a Sepúlveda, el río comienza a excavar un profundo cañón conocido como las Hoces del río Duratón.
+
+{% include image src='/images/hoces otoño.webp' alt='' caption='Hoces en otoño' %}
 
 San Frutos se encuentra sobre una de las más espectaculares hoces que forma el río Duratón. De hecho, la mención más antigua del término hoz para designar estos meandros profundamente encajados en la roca se encuentra en un documento del priorato benedictino fechado en el siglo XV.
 

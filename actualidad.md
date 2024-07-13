@@ -1,7 +1,7 @@
 ---
-title: Actualidad
+title: Hermandad
 layout: page
-order: 6
+order: 4
 description: 'Santo Patron....'
 imageStyle: 'background-position: center'
 image: images/romeria2.webp
