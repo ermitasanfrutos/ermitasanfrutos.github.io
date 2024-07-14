@@ -40,13 +40,13 @@
   	window.dataLayer = window.dataLayer || [];
   	function gtag(){dataLayer.push(arguments);}
   	gtag('js', new Date());
-  	gtag('config', '{{ site.analytics.google }}',
-  		'ad_storage': 'denied',
-	    'ad_user_data': 'denied',
-	    'ad_personalization': 'denied',
-	    'analytics_storage': 'denied',
-	  	{ client_storage: 'none', client_id: getClientID() }
-	);
+  	gtag('config', '{{ site.analytics.google }}')
+  	gtag('ad_storage', 'denied')
+	gtag('ad_user_data', 'denied')
+	gtag('ad_personalization', 'denied')
+	gtag({client_storage: 'none', client_id: getClientID() })
+	gtag('client_storage', 'none')
+	gtag('client_id', getClientID())
 })();
 </script>
 

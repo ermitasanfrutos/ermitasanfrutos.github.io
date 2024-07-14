@@ -1,304 +1,143 @@
- /*AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });*/
+"use strict";
 
-(function($) {
-
-	"use strict";
-
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
-
-/*
-	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
-
-*/
-
-	
-	/*var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height() * 0.7);
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height()  * 0.7);
-		});
-
-	};
-	fullHeight();*/
-
-	// loader
-	var loader = function() {
-		setTimeout(function() { 
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
-
-	// Scrollax
-   /*$.Scrollax();*/
-
-
-/*
-	var carousel = function() {
-		$('.carousel-testimony').owlCarousel({
-			center: true,
-			loop: true,
-			items:1,
-			margin: 30,
-			stagePadding: 0,
-			nav: false,
-			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-			responsive:{
-				0:{
-					items: 1
-				},
-				600:{
-					items: 2
-				},
-				1000:{
-					items: 3
-				}
-			}
-		});
-
-
-	};
-	carousel();*/
-
-	$('nav .dropdown').hover(function(){
-		var $this = $(this);
-		// 	 timer;
-		// clearTimeout(timer);
-		$this.addClass('show');
-		$this.find('> a').attr('aria-expanded', true);
-		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
-		$this.find('.dropdown-menu').addClass('show');
-	}, function(){
-		var $this = $(this);
-			// timer;
-		// timer = setTimeout(function(){
-			$this.removeClass('show');
-			$this.find('> a').attr('aria-expanded', false);
-			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
-			$this.find('.dropdown-menu').removeClass('show');
-		// }, 100);
-	});
-
-
-	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
-	});
-
-	// scroll
-	var scrollWindow = function() {
-		$(window).scroll(function(){
-			var $w = $(this),
-					st = $w.scrollTop(),
-					navbar = $('.ftco_navbar'),
-					sd = $('.js-scroll-wrap');
-
-			if (st > 150) {
-				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');	
-				}
-			} 
-			if (st < 150) {
-				if ( navbar.hasClass('scrolled') ) {
-					navbar.removeClass('scrolled sleep');
-				}
-			} 
-			if ( st > 350 ) {
-				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');	
-				}
-				
-				if(sd.length > 0) {
-					sd.addClass('sleep');
-				}
-			}
-			if ( st < 350 ) {
-				if ( navbar.hasClass('awake') ) {
-					navbar.removeClass('awake');
-					navbar.addClass('sleep');
-				}
-				if(sd.length > 0) {
-					sd.removeClass('sleep');
-				}
-			}
-		});
-	};
-	scrollWindow();
-
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
-
-	var counter = function() {
-		
-		$('#section-counter, .hero-wrap, .ftco-counter').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
-				
-			}
-
-		} , { offset: '95%' } );
-
+var isMobile = {
+	Android: function() {
+		return navigator.userAgent.match(/Android/i);
+	},
+		BlackBerry: function() {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+		iOS: function() {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+		Opera: function() {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+		Windows: function() {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+		any: function() {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 	}
-	counter();
+};
 
+// loader
+var loader = function() {
+    setTimeout(function() { 
+        var loaderElement = document.getElementById('ftco-loader');
+        if (loaderElement) {
+            loaderElement.classList.remove('show');
+        }
+    }, 1);
+};
+loader();
 
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.ftco-animate').waypoint( function( direction ) {
+var dropdowns = document.querySelectorAll('nav .dropdown');
+dropdowns.forEach(function(dropdown) {
+    dropdown.addEventListener('mouseenter', function() {
+        this.classList.add('show');
+        var link = this.querySelector('> a');
+        if (link) {
+            link.setAttribute('aria-expanded', true);
+        }
+        var menu = this.querySelector('.dropdown-menu');
+        if (menu) {
+            menu.classList.add('show');
+        }
+    });
 
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
-				i++;
+    dropdown.addEventListener('mouseleave', function() {
+        this.classList.remove('show');
+        var link = this.querySelector('> a');
+        if (link) {
+            link.setAttribute('aria-expanded', false);
+        }
+        var menu = this.querySelector('.dropdown-menu');
+        if (menu) {
+            menu.classList.remove('show');
+        }
+    });
+});
 
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
+var dropdown04 = document.getElementById('dropdown04');
+if (dropdown04) {
+    dropdown04.addEventListener('show.bs.dropdown', function() {
+        console.log('show');
+    });
+}
 
-					$('body .ftco-animate.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn ftco-animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft ftco-animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight ftco-animated');
-							} else {
-								el.addClass('fadeInUp ftco-animated');
-							}
-							el.removeClass('item-animate');
-						},  k * 50, 'easeInOutExpo' );
-					});
-					
-				}, 100);
-				
-			}
+// scroll
+var scrollWindow = function() {
+    window.addEventListener('scroll', function() {
+        var st = window.scrollY;
+        var navbar = document.querySelector('.ftco_navbar');
+        var sd = document.querySelector('.js-scroll-wrap');
 
-		} , { offset: '95%' } );
-	};
-	contentWayPoint();
+        if (st > 150) {
+            if (!navbar.classList.contains('scrolled')) {
+                navbar.classList.add('scrolled'); 
+            }
+        } 
+        if (st < 150) {
+            if (navbar.classList.contains('scrolled')) {
+                navbar.classList.remove('scrolled', 'sleep');
+            }
+        } 
+        if (st > 350) {
+            if (!navbar.classList.contains('awake')) {
+                navbar.classList.add('awake'); 
+            }
+            
+            if (sd) {
+                sd.classList.add('sleep');
+            }
+        }
+        if (st < 350) {
+            if (navbar.classList.contains('awake')) {
+                navbar.classList.remove('awake');
+                navbar.classList.add('sleep');
+            }
+            if (sd) {
+                sd.classList.remove('sleep');
+            }
+        }
+    });
+};
+scrollWindow();
 
-
-	// navigation
-	var OnePageNav = function() {
-		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-		 	e.preventDefault();
-
-		 	var hash = this.hash,
-		 			navToggler = $('.navbar-toggler');
-		 	$('html, body').animate({
-		    scrollTop: $(hash).offset().top
-		  }, 700, 'easeInOutExpo', function(){
-		    window.location.hash = hash;
-		  });
-
-
-		  if ( navToggler.is(':visible') ) {
-		  	navToggler.click();
-		  }
-		});
-		$('body').on('activate.bs.scrollspy', function () {
-		  console.log('nice');
-		})
-	};
-	OnePageNav();
-
-/*
-	// magnific popup
-	$('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
-  });
-
-*/
-
-
-})(jQuery);
+var contentWayPoint = function() {
+    var elements = document.querySelectorAll('.ftco-animate');
+    var i = 0;
+    elements.forEach(function(element) {
+        var waypoint = new Waypoint({
+            element: element,
+            handler: function(direction) {
+                if (direction === 'down' && !element.classList.contains('ftco-animated')) {
+                    i++;
+                    element.classList.add('item-animate');
+                    setTimeout(function() {
+                        var items = document.querySelectorAll('.ftco-animate.item-animate');
+                        items.forEach(function(el, k) {
+                            setTimeout(function() {
+                                var effect = el.getAttribute('data-animate-effect');
+                                if (effect === 'fadeIn') {
+                                    el.classList.add('fadeIn', 'ftco-animated');
+                                } else if (effect === 'fadeInLeft') {
+                                    el.classList.add('fadeInLeft', 'ftco-animated');
+                                } else if (effect === 'fadeInRight') {
+                                    el.classList.add('fadeInRight', 'ftco-animated');
+                                } else {
+                                    el.classList.add('fadeInUp', 'ftco-animated');
+                                }
+                                el.classList.remove('item-animate');
+                            }, k * 50, 'easeInOutExpo');
+                        });
+                    }, 100);
+                }
+            },
+            offset: '95%'
+        });
+    });
+};
+contentWayPoint();
 
