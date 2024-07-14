@@ -31,26 +31,26 @@
 	};
 
 
+	// Set up analytics
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', '{{ site.analytics.google }}', {
+      client_storage: 'none',
+      client_id: getClientID()
+    });
+  	// Set default consent to 'denied'
+	gtag('consent', 'default', {
+	  'ad_storage': 'denied',
+	  'ad_user_data': 'denied',
+	  'ad_personalization': 'denied',
+	  'analytics_storage': 'denied'
+	});
+
 	// Load script
 	let script = document.createElement('script');
 	script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}";
 	document.head.appendChild(script);
-
-	// Set up
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', '{{ site.analytics.google }}')
-  	gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied'
-	});
-  	gtag('ad_storage', 'denied')
-	gtag('ad_user_data', 'denied')
-	gtag('ad_personalization', 'denied')
-	gtag({client_storage: 'none', client_id: getClientID() })
-	gtag('client_storage', 'none')
-	gtag('client_id', getClientID())
 })();
 </script>
 
