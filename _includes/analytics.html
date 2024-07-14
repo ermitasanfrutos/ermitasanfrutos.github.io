@@ -41,6 +41,10 @@
   	function gtag(){dataLayer.push(arguments);}
   	gtag('js', new Date());
   	gtag('config', '{{ site.analytics.google }}')
+  	gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+	});
   	gtag('ad_storage', 'denied')
 	gtag('ad_user_data', 'denied')
 	gtag('ad_personalization', 'denied')
