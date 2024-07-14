@@ -31,15 +31,24 @@
 	};
 
 
-	// Set up analytics
-  	window.dataLayer = window.dataLayer || [];
+	// Load script
+	let script = document.createElement('script');
+	script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}";
+	document.head.appendChild(script);
+
+	window.dataLayer = window.dataLayer || [];
   	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', '{{ site.analytics.google }}', {
-      client_storage: 'none',
-      client_id: getClientID()
+  	
+  	// Configuración inicial de GA4 con opciones avanzadas para desactivar cookies
+    gtag('config', '{{ site.analytics.google }}', {
+        'client_storage': 'none', // Desactiva el almacenamiento de cookies
+        'anonymize_ip': true, // Anonimizar IPs (opcional, pero recomendado por privacidad)
+        'user_id': getClientID(), // Proporciona tu propio ID de usuario
+        'cookie_expires': 0, // Asegura que no se creen cookies persistentes
+        'cookie_update': false // Desactiva la actualización de cookies
     });
-  	// Set default consent to 'denied'
+
+    // Set default consent to 'denied'
 	gtag('consent', 'default', {
 	  'ad_storage': 'denied',
 	  'ad_user_data': 'denied',
@@ -47,10 +56,11 @@
 	  'analytics_storage': 'denied'
 	});
 
-	// Load script
-	let script = document.createElement('script');
-	script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}";
-	document.head.appendChild(script);
+    // Desactivar cookies explícitamente
+    gtag('set', 'allow_google_signals', false); // Desactiva Google Signals, que podría crear cookies
+    gtag('set', 'allow_ad_personalization_signals', false); // Desactiva la personalización de anuncios
+
+    gtag('js', new Date());
 })();
 </script>
 
