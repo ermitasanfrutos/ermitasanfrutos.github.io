@@ -26,16 +26,23 @@
 <style>
 
 .scrollyTelling {
+  width: 100%;
+  margin-top: -15vh;
+}
+
+.step {
+  padding: 1rem;
+  height: 75vh;
+  margin: 2rem;
   position: relative;
 }
 
 .scroll__text {
-  padding: 0 1rem;
-  max-width: 30rem;
+  padding: 0 2rem;
   opacity: 0.3;
   z-index: 2;
   position: absolute;
-  margin-top: 25%;
+  margin-top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -46,7 +53,7 @@
 
 .scroll__image {
     position: fixed;
-    top: calc( 50% + 50px);
+    top: calc( 50% + 30px);
     left: 50%;
     transform: translate(-50%, -50%);
     /*display: none;*/
@@ -66,23 +73,23 @@
     object-fit: contain;
 }
 
-.step {
-  padding: 1rem;
-  height: 75vh;
-  margin: 1em;
-}
-
 .scroll__text p {
     background: white;
     padding: 8px;
     border: 1px solid black;
     width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.scroll__text, .scroll__image {
+   width: min(100%, 700px);
 }
 
 </style>
 
 <script>
-    window.onload = function(e){ 
+    window.addEventListener("load", function(e){ 
     // Inicializa Scrollama
     const scroller = scrollama();
 
@@ -102,5 +109,5 @@
 
         // Vuelve a calcular los puntos de activación si la ventana cambia de tamaño
         window.addEventListener("resize", scroller.resize);
-    }
+    })
 </script>
