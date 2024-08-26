@@ -29,7 +29,7 @@
           	{% if page.title %}<h2 class="subheading">{{ site.title }}</h2>{% endif %}
             <h1 class="mb-4">{{ page.title | default: site.title }}</h1>
           </div>
-          {%- if page.layout == 'page' -%}{% include module name='scrollDown' %}{%- endif -%}
+          {% include module name='scrollDown' %}
         </div>
       </div>
     </div>

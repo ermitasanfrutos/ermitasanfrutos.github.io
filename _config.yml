@@ -37,3 +37,4 @@ url: https://ermitasanfrutos.diocesisdesegovia.es
 modules:
 - facade
 - scrollDown
+- scrollyTelling

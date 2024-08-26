@@ -1,51 +1,10 @@
----
-title: false
-layout: home
-description: 'Santo Patron....'
-imageStyle: 'background-position: center;'
-image: images/camino-de-san-frutos.webp
-scrolly:
-  - image: frame_1_1721816755167.webp
-    text: San Frutos nació en el 642 de una noble familia segoviana
-  - image: frame_2_1721823504407.webp
-    text: Jesús lo miró con amor y le dijo ― [...] ve, vende todo lo que tienes y dalo a los pobres [...] luego ven y sígueme. (Mc 10, 21)
-  - image: frame_3_1721894043867.webp
-    text: San Frutos y sus hermanos Valentín y Engracia, decidieron seguir la llamada de Dios y dejaron todo su dinero a los pobres
-  - image: frame_4_1721894070099.webp
-    text: Abandonando Segovia....
-  - image: frame_5_1721894102430.webp
-    text: San Frutos y sus hermanos fueron acogidos en la comunidad eremítica del Duratón
-  - image: frame_6_1721816932785.webp
-    text: Dedicaban su tiempo a la oración
-  - image: frame_7_1721823673060.webp
-    text: La contemplación de la creación
-  - image: frame_8_1722179358667.webp
-    text: Y el trabajo en la huerta
-  - image: frame_9_1721823733792.webp
-    text: En el año 711 los musulmanes invaden la península
-  - image: frame_10_1722179387194.webp
-    text: San Frutos arriesgó valientemente su vida para defender la Fe y a sus hermanos
-  - image: frame_11_1721821983247.webp
-    text: Muriendo poco después (c. 715) en compañía de sus hermanos
-  - image: frame_12_1722179447199.webp
-    text: Poco después los soldados musulmanes irrumpen en el monasterio de Caballar, decapitando a Valentín y Engracia
-  - image: frame_13_1722179470327.webp
-    text: Tras la reconquista, el obispo inaugura un priorato benedictino en 1200
-  - image: frame_14_1721823927072.webp
-    text: En 1836 los monjes son expulsados....
-  - image: frame_15_1721892263019.webp
-    text: Tiempo de abandono y hundimiento del priorato
-  - image: frame_16_1722179491216.webp
-    text: Hoy día, se está recuperando la tradición orante de este lugar
----
-
-### Infancia y vocación
+# 1 - Infancia y vocación
 
 San Frutos (c. 642-715) y sus hermanos, San Valentín y Santa Engracia, pertenecían a una acomodada familia de la Segovia visigoda. Sintiendo la llamada de Dios, que les invita a seguirle de un modo más intenso, vendieron todas sus posesiones, las donaron a los pobres y se encaminaron al "desierto".
 
 > Jesús lo miró con amor y le dijo: ― [...] ve, vende todo lo que tienes y dalo a los pobres [...] luego ven y sígueme. (Mc 10, 21)
 
-### Hoces del Duratón - lugar de ermitorios
+# 2 - Hoces del Duratón - lugar de ermitorios
 
 Siguiendo este deseo, los tres hermanos se retiraron a tres ermitas separadas (San Frutos en la cumbre, Valentín a media ladera y Engracia a orillas del río) para vivir una vida de silencio, alejados del ruido pero también de la comodidad del mundo. La cercanía de las tres ermitas y su dependencia del cercano monasterio de Caballar eran típicas de la vida eremítica, que combinaba el silencio y la soledad con el apoyo y cercanía de la comunidad cristiana, que camina junta por un mismo sendero. El gran número de ermitas que durante siglos han jalonado el río Duratón son buena prueba de ello.
 
@@ -60,12 +19,6 @@ Tras la invasión musulmana (año 711), San Frutos arriesgó su vida en defensa 
 ### Priorato Benedictino
 
 Durante la Reconquista, el 17 de agosto de 1076, Alfonso VI donó el sepulcro del santo y sus alrededores al monasterio benedictino de Silos. En el año 1100 el arzobispo de Toledo Bernardo de Cluny inauguró este templo como priorato de Silos. La desamortización de Mendizábal (1836) provocó la expulsión de los monjes y el abandono y hundimiento del priorato, poniendo fin a más de un milenio de vida contemplativa ininterrumpida en el cañón del Duratón. El uso de esta ermita como templo parroquial permitió su conservación, que hoy se sostiene gracias a los donativos de los visitantes y al cuidado de la hermandad de San Frutos.
-
-### Arquitectura
-
-La ermita de San Frutos es de capital importancia para entender la expansión del arte románico en los territorios fronterizos al sur del río Duero. San Frutos es la segunda iglesia románica más antigua de Segovia, tras la iglesia de El Salvador de Sepúlveda.
-
-La ermita de San Frutos es una iglesia románica de una sola nave, construida toda ella en sillería y rematada por un ábside semicircular. Posteriormente se le añadieron dos capillas laterales, de las que solo permanece en pie la del Evangelio (norte), donde los romeros se encomiendan a la protección de San Frutos. El ábside central, reformado en el siglo XIII, conserva un retablo barroco presidido por una imagen de la Virgen y los relicarios de los tres hermanos.
 
 ### La ermita en la actualidad
 
