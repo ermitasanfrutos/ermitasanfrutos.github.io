@@ -1,8 +1,6 @@
 <template>
-{%- assign params = include.params -%}
-{%- assign items = params.scrolly -%}
     <div class="scrollyTelling">
-        {% for item in items %}
+        {% for item in include.params.scrolly %}
         <div class="step">
             <!-- Contenedor del texto descriptivo -->
             <div class="scroll__text">
@@ -10,7 +8,7 @@
             </div>
             <!-- Contenedor de las imágenes -->
             <div class="scroll__image">
-                <img src="images/comic/{{ item.image }}" alt="{{ item.text }}">    
+                <img loading="lazy" width="100%" src="images/comic/{{ item.image }}" alt="{{ item.text }}">    
             </div>
         </div>
         {% endfor %}
@@ -18,7 +16,7 @@
 </template>
 
 <head>
-    <script defer src="https://unpkg.com/scrollama"></script >
+    <script defer async src="https://unpkg.com/scrollama"></script >
 </head>
 
 
@@ -27,22 +25,22 @@
 
 .scrollyTelling {
   width: 100%;
-  margin-top: -15vh;
+  margin-top: 25vh;
 }
 
 .step {
   padding: 1rem;
   height: 75vh;
-  margin: 2rem;
+  margin: 1rem 0rem;
+  /*background-color: red;*/
   position: relative;
 }
 
 .scroll__text {
   padding: 0 2rem;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: 2;
   position: absolute;
-  margin-top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -56,15 +54,12 @@
     top: calc( 50% + 30px);
     left: 50%;
     transform: translate(-50%, -50%);
-    /*display: none;*/
-    /*max-width: 400px;*/
     margin: auto;
     opacity: 0;
     transition: opacity 1.5s;
 }
 
 .active__scroll .scroll__image {
-    display: block;
     opacity: 1;
 }
 
@@ -89,7 +84,7 @@
 </style>
 
 <script>
-    window.addEventListener("load", function(e){ 
+window.addEventListener("load", function(e){ 
     // Inicializa Scrollama
     const scroller = scrollama();
 
@@ -97,7 +92,7 @@
     scroller
         .setup({
             step: ".step", // Las secciones que activarán los eventos
-            offset: 0.5, // Activar en el medio de la pantalla
+            offset: 0.9, // Activar en el medio de la pantalla
             debug: false, // Puedes activar esto para ver los puntos de activación
         })
         .onStepEnter(response => {
@@ -106,8 +101,5 @@
         .onStepExit(response => {
             response.element.classList.remove('active__scroll');
         });
-
-        // Vuelve a calcular los puntos de activación si la ventana cambia de tamaño
-        window.addEventListener("resize", scroller.resize);
-    })
+})
 </script>
