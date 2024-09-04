@@ -16,14 +16,14 @@ image: images/san-frutosII.webp
 
 ## Geocaching
 
-
-{% include image src='/images/logo_geocaching.webp' alt='' caption='' class='col-sm-3' %}
-
-
 <a href="https://coord.info/GCAV3W3">Geocaching</a>
 
-## Guías pedagogico/catequéticas
+## Guías pedagógicas
 ## Audio-guía
 ## Comic San Frutos
+
+<a href="/comic.pdf">PDF</a>
+
+<a href="/#san-frutos">Interactivo</a>
 
 

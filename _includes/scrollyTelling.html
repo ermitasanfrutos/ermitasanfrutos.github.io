@@ -2,10 +2,16 @@
     <div class="scrollyTelling">
         {% for item in include.params.scrolly %}
         <div class="step">
+            {% if item.id %}
+            <!-- Scroll ID -->
+            <div class="scroll__id" id="{{ item.id | slugify }}"></div>
+            {% endif %}
+
             <!-- Contenedor del texto descriptivo -->
             <div class="scroll__text">
                 <p>{{ item.text }}</p>
             </div>
+
             <!-- Contenedor de las imágenes -->
             <div class="scroll__image">
                 <img loading="lazy" width="100%" src="images/comic/{{ item.image }}" alt="{{ item.text }}">    
@@ -43,6 +49,11 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.scroll__id {
+  position: absolute;
+  margin-top: -80vh;
 }
 
 .active__scroll .scroll__text {
