@@ -11,7 +11,8 @@ fetch(`https://5ejmibz3st5c2bwdloszdeck3u0qauwt.lambda-url.eu-west-1.on.aws/widg
 .then(structuredDataText => {
   const script = document.createElement('script');
   script.setAttribute('type', 'application/ld+json');
-  script.textContent = structuredDataText;
+  window.marta = JSON.parse(structuredDataText);
+  script.textContent = JSON.stringify(window.marta);
   document.head.appendChild(script);
 });
 
