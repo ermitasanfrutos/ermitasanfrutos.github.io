@@ -40,6 +40,8 @@ Los fines de la Hermandad son los de conservar y fomentar la devoción a San Fru
 Esta Hermandad cita a sus miembros a acudir a la ermita, dos veces al año: el 1 de mayo es la Asamblea General de Hermanos, y en septiembre la Asamblea Extraordinaria. Para pertenecer a esta Hermandad, tanto hombres como mujeres, el único requisito esencial es ser cristiano Católico Apostólico y luego llevar a cabo sus estatutos, y hacerlo por decisión propia y libremente. También se puede ser bienhechor colaborando esporádicamente con la Hermandad mediante aportaciones económicas o trabajo voluntario.
 
 
+Descubre los ultimos eventos de nuestra hermandad en <a target="_blank" href="https://www.{{ site.facebook }}">{{ site.facebook }}</a>
+
 
 <!--Se puede ver un vídeo de la romería en el siguiente enlace de Youtube:
 {% include module name='facade' yt='_L1aLJYpPKA' style='max-width: 70vmin;' %}-->
