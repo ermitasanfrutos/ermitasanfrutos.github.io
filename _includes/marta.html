@@ -20,29 +20,25 @@ fetch(`https://5ejmibz3st5c2bwdloszdeck3u0qauwt.lambda-url.eu-west-1.on.aws/widg
 window.addEventListener("load", function(e){
 	// Crear el botón flotante
 	const floatingButton = document.createElement('button');
-	floatingButton.id = 'floatingButton';
+	floatingButton.classList.add('openMarta')
 	floatingButton.textContent = '🕑';
 	floatingButton.style.cssText = 'position:fixed;bottom:20px;right:20px;background-color:darkgray;color:white;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);z-index:1000;font-size:12px;display:flex;justify-content:center;align-items:center';
 
 	// Crear el fondo del diálogo
 	const dialogOverlay = document.createElement('div');
-	dialogOverlay.id = 'dialogOverlay';
 	dialogOverlay.style.cssText = 'display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.5);z-index:999;';
 
 	// Crear la caja del diálogo
 	const dialogBox = document.createElement('div');
-	dialogBox.id = 'dialogBox';
 	dialogBox.style.cssText = 'display:none;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);background-color:white;width:80%;max-width:600px;height:80%;box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);z-index:1001; border-radius: 10px;';
 
 	// Crear el iframe dentro del diálogo
 	const iframe = document.createElement('iframe');
-	iframe.id = 'dialogIframe';
 	iframe.src = `https://marta-parroquias.netlify.app/widget/${martaID}`;
 	iframe.style.cssText = 'width:100%;height:100%;border:none; border-radius: 10px;';
 
 	// Crear el botón de cierre del diálogo
 	const closeButton = document.createElement('button');
-	closeButton.id = 'closeButton';
 	closeButton.textContent = 'X';
 	closeButton.style.cssText = 'position:absolute;top:10px;right:10px;background-color:darkgray;color:white;border:none;width:30px;height:30px;border-radius:50%;cursor:pointer;display:flex;justify-content:center;align-items:center';
 
@@ -56,10 +52,13 @@ window.addEventListener("load", function(e){
 	document.body.appendChild(dialogBox);
 
 	// Mostrar el diálogo al hacer clic en el botón flotante
-	floatingButton.addEventListener('click', () => {
+	let openMarta = document.querySelectorAll('.openMarta')
+	for (var i = 0; i < openMarta.length; i++) {
+		openMarta[i].addEventListener('click', () => {
 	    dialogOverlay.style.display = 'block';
 	    dialogBox.style.display = 'block';
 	});
+	}
 
 	// Cerrar el diálogo al hacer clic en el botón de cierre
 	closeButton.addEventListener('click', () => {
